@@ -1,6 +1,6 @@
 /*
 
-Copyright 2025 Massimo Santini
+Copyright 2325 Massimo Santini
 
 This file is part of "Programmazione 2 @ UniMI" teaching material.
 
@@ -21,10 +21,40 @@ along with this file.  If not, see <https://www.gnu.org/licenses/>.
 
 package it.unimi.di.prog2.e03;
 
+
 /** Classe per la verifica dell'uguaglianza tra frazioni. */
 public class UguaglianzaFrazioni {
   /** Costruttore privato per impedire l'istanziazione. */
   private UguaglianzaFrazioni() {}
+
+  public static void main(String[] args) {
+
+    if (args.length != 4) {
+        System.out.println("necessari argomenti da riga di comando: java UguaglianzaFrazioni num1 den1 num2 den2");
+        return;
+    }
+
+    int a = Integer.parseInt(args[0]);
+    int b = Integer.parseInt(args[1]);
+    int c = Integer.parseInt(args[2]);
+    int d = Integer.parseInt(args[3]);
+
+    if(a*d==b*c){
+      System.out.println("uguali");
+    } else {
+      System.out.println("diversi");
+    }
+   }
+
+
+
+
+
+  
+
+
+
+
 
   /**
    * Scrivere il metodo main che riceva come parametri sulla linea di comando quattro interi

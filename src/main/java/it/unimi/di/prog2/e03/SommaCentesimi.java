@@ -21,11 +21,33 @@ along with this file.  If not, see <https://www.gnu.org/licenses/>.
 
 package it.unimi.di.prog2.e03;
 
+import java.util.Scanner;
+
 /** Classe per la somma di importi in centesimi. */
 public class SommaCentesimi {
 
   /** Costruttore privato per impedire l'istanziazione. */
   private SommaCentesimi() {}
+
+  public static void main(String[] args) {
+    try (Scanner sc = new Scanner(System.in)) {
+      int sommaCentesimi = 0;
+      while (sc.hasNextLine()) {
+        String linea = sc.nextLine();
+        String[] parti = linea.split("\\.");
+        int euro = Integer.parseInt(parti[0]);
+        int centesimi = Integer.parseInt(parti[1]);
+        sommaCentesimi += euro *100 + centesimi;
+      }
+      int euroTot = sommaCentesimi/100; 
+      int centesimiTot = sommaCentesimi%100;
+      if (centesimiTot<10) {
+        System.out.printf("%d.0%d" ,euroTot, centesimiTot);
+      } else {
+        System.out.printf("%d.%d" ,euroTot, centesimiTot);
+      }
+        }
+   }
 
   /**
    * Scrivere il metodo main che legga dal flusso di ingresso un elenco di importi in euro e
