@@ -21,11 +21,32 @@ along with this file.  If not, see <https://www.gnu.org/licenses/>.
 
 package it.unimi.di.prog2.e05;
 
+
 /** Client for the {@link ArrayUtils} class. */
 public class ArrayUtilsClient {
 
   /** . */
   private ArrayUtilsClient() {}
+
+public static void main(String[] args) {
+    
+  }
+
+
+
+
+
+
+
+
+
+
+  //  }
+  
+
+
+
+//  }
 
   /*
    * Write a client that reads 10 integers in increasing order from the standard input and prints
