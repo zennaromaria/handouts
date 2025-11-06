@@ -34,7 +34,7 @@ public class ArrayIntSet {
   // Fields
 
   /** The initial capacity of the internal array. */
-  private final int INITIAL_CAPACITY = 16;
+  private static final int INITIAL_CAPACITY = 16;
 
   /** The {@link List} containing this set elements. */
   private int[] els;

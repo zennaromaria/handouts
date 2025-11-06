@@ -27,6 +27,7 @@ public class UguaglianzaFrazioni {
   /** Costruttore privato per impedire l'istanziazione. */
   private UguaglianzaFrazioni() {}
 
+<<<<<<< HEAD
   public static void main(String[] args) {
 
     if (args.length != 4) {
@@ -57,6 +58,9 @@ public class UguaglianzaFrazioni {
 
 
   /**
+=======
+  /*
+>>>>>>> 371fbdbd7f9efabbe837da31a9673f130ea80312
    * Scrivere il metodo main che riceva come parametri sulla linea di comando quattro interi
    * corrispondenti rispettivamente a numeratore e denominatore di due frazioni ed emetta nel flusso
    * d'uscita "uguali" se le frazioni sono uguali, oppure "diverse".
